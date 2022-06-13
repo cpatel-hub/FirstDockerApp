@@ -1,0 +1,22 @@
+version: '3'
+services:
+  blogcomment:
+    image: chirag_assignment_1/blogcomment
+    ports:
+      - 4002:4002
+  blogpost:
+    image: chirag_assignment_1/blogpost
+    ports:
+      - 4001:4001
+  eventbus:
+    image: chirag_assignment_1/eventbus
+    ports:
+      - 4005:4005
+  QueryService:
+    image: chirag_assignment_1/queryservice
+    ports:
+      - 4003:4003
+  frontend_ui:
+    image: chirag_assignment_1/frontend_ui
+    ports:
+      - 3000:3000 
